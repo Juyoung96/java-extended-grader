@@ -14,7 +14,12 @@ public static void main ( String[] args) {
   
   Scanner s = new Scanner ( System.in) ;
   int grade;
+  int skip;
   
+  System.out.println( "Do you want the Grader (1) or Strings (2)?" );
+  skip = s.nextInt(); // get user choice
+  
+  if(skip == 1) {
   System.out.println( "Enter your grade percentage: ");
   grade = s.nextInt(); // input the user grade
   
@@ -80,7 +85,43 @@ public static void main ( String[] args) {
    
    // Showing ne commits
    System.out.println( "Modifying this program for Github.com" );
+   }
+  else {
+   System.out.println( "Welcome to the String progtram!~" );
    
+   // Number 1
+   String s1 = "The number of rabbis is ";
+   int argh = 129;
+   String report = s1 + argh;
+   System.out.println( report );
+   
+   // Number 2
+   String p = "Groovy Dude";
+   System.out.println( p.toUpperCase() );
+   
+   //Number 3
+   String g = "Computer Science is for NERD!";
+   System.out.println( g. toLowerCase() );
+   
+   //Number 4
+   String c;
+   String m = "The Gettysburg Address";
+   c = m.substring(4);
+   System.out.println(c);  
+   
+   //Number 5
+   String b = "Four score and seven years ago,";
+   String c1 =  b.substring(7,12);
+   System.out.println(c1);
+   
+   //Nubber 6
+   int count1;
+   String s2 = "Surface tension";
+   count1 = s2.length();
+   System.out.println( count1 ) ;
+  }
+  
+  
 } // end main method
 
 } // end class
